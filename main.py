@@ -8,8 +8,6 @@ import os
 
 client = discord.Client()
 
-token = "OTYzODIyMTQyMTAzODg3OTIy.YlbrUQ.3gIynbJ8HP9J2GQJjvYlb-LZjpg" #봇토큰
-
 common = '기본문의-'
 
 charge = '충전문의-'
@@ -602,5 +600,7 @@ async def on_button_click(interaction):
         await asyncio.sleep(10)
         await interaction.channel.delete()
         return
-
-client.run(token)
+    
+    
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
