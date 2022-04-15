@@ -4,5 +4,3 @@ discord_components.py==2.1.2
 discord_buttons_plugin.py==2.2.0
 
 
-runtime.txt
-python-3.8
